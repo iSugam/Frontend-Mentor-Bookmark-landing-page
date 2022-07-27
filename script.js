@@ -1,4 +1,4 @@
-import feature_CONTENT from "./features.js"
+import feature_CONTENT from "./features.js" // Importing all the contents from features.js
 
 const select = selector => document.querySelector(selector); // Select SINGLE ELEMENT
 
