@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="styles.css">
 
   <!-- JavaScript Link -->
-  <script src="script.js" defer></script>
+  <script src="./script.js" defer type="module"></script>
   
 </head>
 <body>
@@ -104,9 +104,24 @@
 
           <div class="features-navigation-btns">
             <div class="feature-buttons">
-              <button>Simple Bookmarking</button>
-              <button>Speedy Searching</button>
-              <button>Easy Sharing</button>
+              <button autofocus class="button active">Simple Bookmarking</button>
+              <button class="button">Speedy Searching</button>
+              <button class="button">Easy Sharing</button>
+            </div>
+          </div>
+
+          <!-- Feature CONTENTS -->
+          <div class="feature-contents">
+            <div class="feature-image">
+              <img src="images/illustration-features-tab-1.svg" alt="feature">
+            </div>
+
+            <div class="feature-content-text">
+              <h3 class="feature-heading-text">Bookmark in one click</h3>
+              <p class="feature-text">Organize your bookmarks however you like. Our simple drag-and-drop interface 
+                gives you complete control over how you manage your favourite sites.
+              </p>
+              <a href="#" class="feature-button">More Info</a>
             </div>
           </div>
       </section> <!-- FEATURES Section End -->
@@ -116,14 +131,12 @@
 
   
   
-  
+  <br><br><br>
 
   Bookmark in one click
 
-  Organize your bookmarks however you like. Our simple drag-and-drop interface 
-  gives you complete control over how you manage your favourite sites.
-
-  More Info
+  
+  
 
   Intelligent search
 
