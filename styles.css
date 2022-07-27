@@ -686,3 +686,46 @@ body {
         width: 60%;
     }
 }
+
+/**************** FAQ SECTION Styles ****************/
+.faq {
+    width: 100%;
+}
+
+.faq-container {
+    width: 40%;
+    margin: auto;
+}
+
+.faq-question-answer {
+    padding: 1rem 0;
+    height: min-content;
+    position: relative;
+}
+
+.faq-question-answer:first-child::before,
+.faq-question-answer::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    height: .5px;
+    width: 100%;
+    background-color: hsl(229 8% 60% / 0.5);
+}
+.faq-question-answer:first-child::before {
+    top: 3px;
+}
+
+.faq-question-answer .faq-question {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.faq-question-answer .faq-answer {
+    transform: scaleY(0);
+    visibility: hidden;
+    height: 0;
+}
