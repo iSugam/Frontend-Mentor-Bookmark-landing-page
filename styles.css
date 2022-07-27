@@ -567,3 +567,22 @@ body {
     }
 
 }
+
+/*************** DOWNLOAD-EXTENSION SECTION Styles ***************/
+.download-extension {
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+    text-align: center;
+}
+
+.download-extension .cards-container {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
