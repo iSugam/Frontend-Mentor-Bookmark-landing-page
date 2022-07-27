@@ -751,6 +751,11 @@ body {
     color: hsl(0, 94%, 66%);
 }
 
+.faq-question-answer .faq-question span svg,
+.faq-question-answer .faq-question span svg path {
+    transition: transform 200ms, stroke 200ms;
+}
+
 .faq-question-answer .faq-question span svg.active {
     transform: rotate(-180deg);
 }
@@ -758,20 +763,19 @@ body {
     stroke: hsl(0, 94%, 66%);
 }
 
-.faq-question-answer .faq-answer {
-    transform: scaleY(0);
-    visibility: hidden;
-    height: 0;
-}
-
 .faq-question-answer .faq-answer p {
     line-height: 32px;
     color: hsl(229, 8%, 60%);
+    transform-origin: top;
+    transform: scale(0);
+    visibility: hidden;
+    height: 0;
+    transition: 200ms ease;
 }
 
-.faq-question-answer .faq-answer.active {
-    transform: scaleY(1);
+.faq-question-answer .faq-answer p.active {
+    transform: scale(1);
     visibility: visible;
-    height: max-content;
+    height: 100%;
     margin: 20px 0;
 }
