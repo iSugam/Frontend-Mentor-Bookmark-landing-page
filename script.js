@@ -1,3 +1,5 @@
+import feature_CONTENT from "./features.js"
+
 const select = selector => document.querySelector(selector); // Select SINGLE ELEMENT
 
 const selectAll = selectorAll =>  document.querySelectorAll(selectorAll); // Select MULTIPLE ELEMENTS
@@ -26,30 +28,6 @@ nav_CLOSE.addEventListener("click", () => { // NAV CLOSE Event Listener
 });
 
 // FEATURE BUTTONS functionality
-
-const feature_CONTENT = [
-    {
-        image: "images/illustration-features-tab-1.svg",
-        heading: "Bookmark in one click",
-        text: `Organize your bookmarks however you like. Our simple drag-and-drop interface 
-                gives you complete control over how you manage your favourite sites.`,
-        btnText: "More Info"
-    },
-    {
-        image: "images/illustration-features-tab-2.svg",
-        heading: "Intelligent search",
-        text: `Our powerful search feature will help you find saved sites in no time at all. 
-                No need to trawl through all of your bookmarks.`,
-        btnText: "More Info"
-    },
-    {
-        image: "images/illustration-features-tab-3.svg",
-        heading: "Share your bookmarks",
-        text: `Easily share your bookmarks and collections with others. Create a shareable 
-                link that you can send at the click of a button.`,
-        btnText: "More Info"
-    }
-]
 const Feature_BUTTONS = selectAll(".feature-buttons button");
 
 Feature_BUTTONS.forEach((button, index) => {
@@ -57,9 +35,9 @@ Feature_BUTTONS.forEach((button, index) => {
         select(".feature-buttons").querySelector(".active").classList.remove("active");
         button.classList.add("active");
 
-        select(".feature-image img").setAttribute("src", feature_CONTENT[index].image)
-        select(".feature-content-text .feature-heading-text").innerText = feature_CONTENT[index].heading
-        select(".feature-content-text .feature-text").innerText = feature_CONTENT[index].text
-        select(".feature-content-text .feature-button").innerText = feature_CONTENT[index].btnText
+        select(".feature-image img").setAttribute("src", feature_CONTENT[index].image);
+        select(".feature-content-text .feature-heading-text").innerText = feature_CONTENT[index].heading;
+        select(".feature-content-text .feature-text").innerText = feature_CONTENT[index].text;
+        select(".feature-content-text .feature-button").innerText = feature_CONTENT[index].btnText;
     });
 });
