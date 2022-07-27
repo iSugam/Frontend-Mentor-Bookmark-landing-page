@@ -585,12 +585,12 @@ body {
     text-align: center;
 }
 
-.download-extension .download-heading-text h3{
+.download-extension .download-heading-text h3 {
     font-size: 35px;
     font-weight: 500;
 }
 
-.download-extension .download-heading-text p{
+.download-extension .download-heading-text p {
     font-size: 18px;
     color: hsl(229, 8%, 60%);
     width: 60%;
@@ -599,6 +599,7 @@ body {
     line-height: 24px;
 }
 
+/******** CARD CONTAINER Section ********/
 .download-extension .cards-container {
     width: max-content;
     display: flex;
@@ -627,6 +628,18 @@ body {
     margin-top: 80px;
 }
 
+/****** BROWSER DESCRIPTION inside download-card ******/
+.download-extension .cards-container .download-card .browser-description p:first-child {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.download-extension .cards-container .download-card .browser-description p:last-child {
+    color: hsl(229, 8%, 60%);
+}
+
+/****** ADD TO EXTENSION <a> tag inside download-card ******/
 .download-extension .cards-container .download-card a {
     padding: 10px 30px;
     background-color: hsl(231, 69%, 60%);
