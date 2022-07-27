@@ -23,4 +23,4 @@ nav_CLOSE.addEventListener("click", () => { // NAV CLOSE Event Listener
     select("#header .logo svg circle").classList.remove("active");
     select("#header .logo svg g g path").classList.remove("active");
     select("#header .logo svg g path").classList.remove("active");
-})
+});
