@@ -28,8 +28,16 @@ body {
     text-transform: uppercase
 }
 
+#header .logo {
+    z-index: 1999;
+}
+
 .nav-close-icon,
 .hamburger-icon {
+    display: none;
+}
+
+#header .social-icon {
     display: none;
 }
 
@@ -88,16 +96,63 @@ body {
 
     #header {
         position: relative;
+        padding: 0 2.3rem;
+    }
+
+    .nav-close-icon,
+    .hamburger-icon {
+        display: block;
+    }
+
+    .hamburger-icon.active {
+        display: none;
+    }
+
+    .nav-close-icon {
+        position: absolute;
+        top: 3rem;
+        right: 2.37rem;
     }
 
     #header nav {
         position: fixed;
-        top: 0;
+        top: -100%;
         right: 0;
         z-index: 999;
-        background-color: hsl(231 69% 60% / .5);
+        background-color: rgba(2, 22, 64, 0.838);
         width: 100%;
         min-height: 100vh;
+        transition: top 200ms ease;
+    }
+    #header nav.active {
+        top: 0;
+    }
+
+    #header .logo svg circle.active {
+        fill: #fff;
+        transition: 300ms;
+    }
+    #header .logo svg g g path.active {
+        fill: #000;
+        transition: 300ms;
+    }
+    #header .logo svg g path.active {
+        fill: #fff;
+        transition: 300ms;
+    }
+
+    /****** Header SOCIAL NETWORK ICONS ******/
+    #header .social-icon {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    #header .social-icon img {
+        margin: 20px 20px;
     }
 
     #header nav ul {
@@ -106,15 +161,38 @@ body {
         width: 100%;
     }
     
-    #header nav ul li{
+    #header nav ul li {
         display: block;
         margin: 30px 0;
+        width: 100%;
         text-align: center;
+        position: relative;
+    }
+    #header nav ul li::before {
+        content: '';
+        position: absolute;
+        top: -80%;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 80%;
+        height: .5px;
+        background-color: hsl(229 8% 60% / .6);
+    }
+
+    #header nav ul li:last-child:before {
+        top: -30%;
     }
 
     #header nav ul li a {
         font-size: 18px;
-        color: #fff;
+        color: #fff9;
+        width: 80%;
+    }
+
+    #header nav ul li:last-child a {
+        color: #fff9;
+        background-color: transparent;
+        border-color: #fff9;
     }
 }
 
@@ -198,8 +276,47 @@ body {
 /**************** MEDIA QUERY for HERO ****************/
 @media (max-width: 1100px) {
     .hero {
-        padding: 2.5rem 10rem;
+        padding: 1rem;
         flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
         text-align: center;
+    }
+}
+
+@media (max-width: 756px) {
+
+    .hero .hero-content {
+        padding: 0 2rem;
+        gap: 20px;
+    }
+
+    .hero .hero-content h1 {
+        font-size: 28px;
+        font-weight: 500;
+    }
+    
+    .hero .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero .hero-content .hero-content-btns a {
+        font-size: 12px;
+        padding: 8px 10px;
+        border-radius: 5px;
+        margin-top: 0;
+    }
+
+    .hero .hero-image {
+        width: 100% !important;
+    }
+ 
+     .hero .hero-image img {
+        width: 100% !important;
+    }
+ 
+     .hero .hero-image .hero-background {
+        width: 140%;
+        height: 90%;
     }
 }
