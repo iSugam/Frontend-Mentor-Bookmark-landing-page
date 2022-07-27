@@ -525,6 +525,10 @@ body {
 
 /**************** FEATURE Media Query 556px ****************/
 @media (max-width: 556px) {
+
+    .features .features-heading h2 {
+        font-size: 28px;
+    }
     
     .features .features-navigation-btns .feature-buttons button { 
         display: block;
@@ -621,4 +625,38 @@ body {
 }
 .download-extension .cards-container .download-card:nth-child(3) {
     margin-top: 80px;
+}
+
+/************** Media Query for DOWNLOAD-EXTENSION Section 980px **************/
+@media (max-width: 980px) {
+    
+    .download-extension .cards-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 0;
+    }
+
+    .download-extension .cards-container .download-card {
+        margin-top: 0;
+    }
+
+    .download-extension .cards-container .download-card:nth-child(2) {
+        margin-top: -30px;
+    }
+    .download-extension .cards-container .download-card:nth-child(3) {
+        margin-top: -30px;
+    }
+}
+
+@media (max-width: 556px) {
+
+    .download-extension .download-heading-text h3{
+        font-size: 28px;
+    }
+
+    .download-extension .download-heading-text p{
+        font-size: 16px;
+        width: 60%;
+    }
 }
