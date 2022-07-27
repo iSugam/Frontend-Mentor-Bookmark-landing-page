@@ -380,7 +380,7 @@ body {
     border: none;
     background-color: transparent;
     cursor: pointer;
-    padding: 30px 40px;
+    padding: 60px 40px 30px;
     font-size: 18px;
     color: hsl(229, 8%, 60%);
     position: relative;
@@ -419,20 +419,20 @@ body {
 .features .feature-contents .feature-background {
     position: absolute;
     bottom: -60px;
-    left: -30%;
+    left: -200px;
     width: 100%;
     height: 100%;
     background-color: hsl(231, 69%, 60%);
     z-index: -1;
-    border-top-right-radius: 300px;
-    border-bottom-right-radius: 300px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 150px;
 }
 
 /****** Feature CONTENT TEXT Styles ******/
 .features .feature-contents .feature-content-text {
     text-align: left;
     display: grid;
-    gap: 20px;
+    gap: 35px;
 }
 
 .features .feature-contents .feature-content-text h3 {
@@ -447,7 +447,7 @@ body {
 }
 
 .features .feature-contents .feature-content-text a {
-    padding: 10px 20px;
+    padding: 16px 28px;
     background-color:  hsl(231, 69%, 60%);
     width: max-content;
     color: #fff;
