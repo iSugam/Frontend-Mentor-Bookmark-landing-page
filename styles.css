@@ -572,6 +572,7 @@ body {
 .download-extension {
     margin-top: 150px;
     width: 100%;
+    height: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -599,4 +600,25 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    gap: 30px;
+}
+
+.download-extension .cards-container .download-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    box-shadow: 0 10px 15px rgb(0 0 0 / .1);
+    padding: 3rem 0;
+    margin-bottom: 100px;
+    border-radius: 15px;
+    overflow-y: hidden;
+}
+
+.download-extension .cards-container .download-card:nth-child(2) {
+    margin-top: 40px;
+}
+.download-extension .cards-container .download-card:nth-child(3) {
+    margin-top: 80px;
 }
