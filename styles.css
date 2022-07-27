@@ -751,8 +751,27 @@ body {
     color: hsl(0, 94%, 66%);
 }
 
+.faq-question-answer .faq-question span svg.active {
+    transform: rotate(-180deg);
+}
+.faq-question-answer .faq-question span svg path.active {
+    stroke: hsl(0, 94%, 66%);
+}
+
 .faq-question-answer .faq-answer {
     transform: scaleY(0);
     visibility: hidden;
     height: 0;
+}
+
+.faq-question-answer .faq-answer p {
+    line-height: 32px;
+    color: hsl(229, 8%, 60%);
+}
+
+.faq-question-answer .faq-answer.active {
+    transform: scaleY(1);
+    visibility: visible;
+    height: max-content;
+    margin: 20px 0;
 }
