@@ -320,3 +320,52 @@ body {
         height: 90%;
     }
 }
+
+/**************** FEATURES Styles ****************/
+.features {
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.features .features-heading {
+    width: 100%;
+}
+
+.features .features-heading p {
+    color: hsl(229, 8%, 60%);
+    width: 450px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+/****** Feature NAVIGATION BUTTONS Styles ******/
+.features .features-navigation-btns {
+    position: relative;
+    width: 100%;
+}
+
+/****** Feature BUTTONS Styles ******/
+.features .features-navigation-btns .feature-buttons {
+    width: fit-content;
+    margin: auto;
+    position: relative;
+}
+
+/****** BUTTONS ******/
+.features .features-navigation-btns button{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 20px 50px;
+    padding: 30px;
+    font-size: 18px;
+    color: hsl(229, 8%, 60%);
+    position: relative;
+}
+
+.features .features-navigation-btns button:focus {
+    border-bottom: 5px solid hsl(0, 94%, 66%);
+    color: hsl(0, 94%, 66%);
+}
