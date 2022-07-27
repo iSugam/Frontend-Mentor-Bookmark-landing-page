@@ -580,6 +580,20 @@ body {
     text-align: center;
 }
 
+.download-extension .download-text h3{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.download-extension .download-text p{
+    font-size: 18px;
+    color: hsl(229, 8%, 60%);
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    line-height: 24px;
+}
+
 .download-extension .cards-container {
     width: max-content;
     display: flex;
