@@ -28,15 +28,18 @@ body {
     text-transform: uppercase
 }
 
+/* Boomark Logo */
 #header .logo {
     z-index: 1999;
 }
 
+/* Nav Icons */
 .nav-close-icon,
 .hamburger-icon {
     display: none;
 }
 
+/* Social Network Icons */
 #header .social-icon {
     display: none;
 }
@@ -75,13 +78,7 @@ body {
     background-color: transparent;
 }
 
-.container {
-    overflow-x: hidden;
-    min-height: 80vh;
-    height: 100%;
-}
-
-/**************** MEDIA QUERY for HEADER ****************/
+/**************** MEDIA QUERY for HEADER 1020px ****************/
 @media (max-width: 1020px) {
     #header {
         padding: 5rem;
@@ -92,6 +89,7 @@ body {
     }
 }
 
+/********** MEDIA QUERY for HEADER 756px **********/
 @media (max-width: 756px) {
 
     #header {
@@ -194,6 +192,13 @@ body {
         background-color: transparent;
         border-color: #fff9;
     }
+}
+
+/**************** CONTAINER Section Styles ****************/
+.container {
+    overflow-x: hidden;
+    min-height: 80vh;
+    height: 100%;
 }
 
 /**************** HERO Section Styles ****************/
