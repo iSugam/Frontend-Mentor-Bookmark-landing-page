@@ -697,6 +697,24 @@ body {
     margin: auto;
 }
 
+/****** FAQ HEADINg Styles ******/
+.faq-container .faq-heading {
+    margin: 50px;
+    text-align: center;
+}
+
+.faq-container .faq-heading h2 {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.faq-container .faq-heading p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: hsl(229, 8%, 60%);
+}
+
+/****** FAQ QUESTION and ANSWER Styles ******/
 .faq-question-answer {
     padding: 1rem 0;
     height: min-content;
@@ -714,7 +732,7 @@ body {
     background-color: hsl(229 8% 60% / 0.5);
 }
 .faq-question-answer:first-child::before {
-    top: 3px;
+    top: -3px;
 }
 
 .faq-question-answer .faq-question {
