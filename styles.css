@@ -19,6 +19,10 @@ body {
     font-size: 18px;
 }
 
+.root p {
+    transition: color 200ms;
+}
+
 /**************** HEADER Styles ****************/
 #header {
     display: flex;
@@ -693,7 +697,7 @@ body {
 }
 
 .faq-container {
-    width: 40%;
+    width: 600px;
     margin: auto;
 }
 
@@ -738,8 +742,13 @@ body {
 .faq-question-answer .faq-question {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    padding: 10px 0;
     cursor: pointer;
+    font-size: 18px;
+}
+
+.faq-question-answer .faq-question:hover > p {
+    color: hsl(0, 94%, 66%);
 }
 
 .faq-question-answer .faq-answer {
