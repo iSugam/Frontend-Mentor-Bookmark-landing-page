@@ -41,3 +41,14 @@ Feature_BUTTONS.forEach((button, index) => {
         select(".feature-content-text .feature-button").innerText = feature_CONTENT[index].btnText;
     });
 });
+
+// FAQ QUESTION and ANSWER toggle on Click event
+const FAQ_QUESTION = selectAll(".faq-question-answer .faq-question");
+FAQ_QUESTION.forEach((question, index) => {
+    question.addEventListener("click", (e) => {
+
+        selectAll(".faq-question-answer .faq-question span svg")[index].classList.toggle("active");
+        selectAll(".faq-question-answer .faq-question span svg path")[index].classList.toggle("active");
+        selectAll(".faq-question-answer .faq-answer p")[index].classList.toggle("active");
+    });
+});
