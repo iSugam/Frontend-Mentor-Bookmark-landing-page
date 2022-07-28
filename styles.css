@@ -962,7 +962,7 @@ footer nav .social-icon a:hover svg > path {
     }
 }
 
-
+/*********** Media Query for FOOTER Section 756px ***********/
 @media (max-width: 756px) {
     footer .contact-us h3 {
         font-size: 28px;
@@ -983,6 +983,7 @@ footer nav .social-icon a:hover svg > path {
     }
 }
 
+/******** Media Query for FOOTER Section 556px ********/
 @media (max-width: 556px) {
     footer .contact-us {
         width: 100%;
@@ -996,6 +997,15 @@ footer nav .social-icon a:hover svg > path {
     footer .contact-us h3 {
         font-size: 24px;
         margin: auto;
-        width: max-content;
-    }    
+        width: fit-content;
+    } 
+    
+    footer nav ul li a {
+        font-size: 12px;
+    }
+
+    footer nav .social-icon a {
+        display: inline-block;
+        padding: 1rem;
+    }
 }
