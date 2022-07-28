@@ -753,6 +753,7 @@ body {
     top: -3px;
 }
 
+/****** FAQ QUESTIONS ******/
 .faq-question-answer .faq-question {
     display: flex;
     justify-content: space-between;
@@ -765,6 +766,7 @@ body {
     color: hsl(0, 94%, 66%);
 }
 
+/****** FAQ QUESTIONS arrow-icon ******/
 .faq-question-answer .faq-question span svg,
 .faq-question-answer .faq-question span svg path {
     transition: transform 200ms, stroke 200ms;
@@ -777,6 +779,7 @@ body {
     stroke: hsl(0, 94%, 66%);
 }
 
+/****** FAQ ANSWERS ******/
 .faq-question-answer .faq-answer p {
     line-height: 32px;
     color: hsl(229, 8%, 60%);
