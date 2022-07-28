@@ -29,6 +29,6 @@ For this challenge you'll need to:
 
 ## Links
 
-- Solution Repo: [Solution Repo]()
-- Live Site: [GitHub Pages](https://pages.github.com/)
+- Solution Repo: [Solution Repo](https://github.com/iSugam/Frontend-Mentor-Bookmark-landing-page)
+- Live Site: [GitHub Pages](https://isugam.github.io/Frontend-Mentor-Bookmark-landing-page/)
 
