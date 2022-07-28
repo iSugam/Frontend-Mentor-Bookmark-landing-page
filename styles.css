@@ -950,3 +950,29 @@ footer nav .social-icon a svg path {
 footer nav .social-icon a:hover svg > path {
     fill: hsl(0, 94%, 66%);
 }
+
+/**************** Media Query for FOOTER Section 980px ****************/
+@media (max-width: 980px) {
+    footer nav  {
+        padding: 2rem 5rem;
+        flex-direction: column;
+        gap: 20px;
+        height: max-content;
+    }
+}
+
+
+@media (max-width: 756px) {
+    footer .contact-us h3 {
+        font-size: 28px;
+    }
+
+    footer .contact-us form {
+        flex-direction: column;
+    }
+
+    footer .contact-us form button {
+        width: 100%;
+    }
+}
+
