@@ -1074,5 +1074,6 @@ footer nav .social-icon a:hover svg > path {
 }
 
 .attribution a {
+    font-size: 14px;
     color: hsl(0, 94%, 66%);
 }
