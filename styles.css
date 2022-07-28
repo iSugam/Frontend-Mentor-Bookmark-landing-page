@@ -861,3 +861,12 @@ footer .contact-us h3 {
 footer .contact-us form {
     display: inline-block;
 }
+
+footer .contact-us form input,
+footer .contact-us form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    margin: 0 5px;
+}
