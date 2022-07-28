@@ -52,3 +52,21 @@ FAQ_QUESTION.forEach((question, index) => {
         selectAll(".faq-question-answer .faq-answer p")[index].classList.toggle("active");
     });
 });
+
+
+// Form email validation
+const form = select("form");
+const regExp = /^([A-Za-z0-9._]){2,}@([A-Za-z0-9]){2,}[.]{1}([A-Za-z.]){2,6}$/; // Regular Expression for validation
+
+const email = document.getElementById("email");
+
+form.addEventListener("submit", (e) => {
+
+    // Check if EMAIL Input contain RegExp
+    if(!regExp.test(email.value)) {
+        e.preventDefault()
+        select(".email-inp img").classList.add("active")
+        select(".email-inp h6").classList.add("active")
+        email.classList.add("active")
+    }
+})
