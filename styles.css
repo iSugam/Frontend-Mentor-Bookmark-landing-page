@@ -830,3 +830,15 @@ body {
     }
     
 }
+
+footer {
+    height: 100%;
+    margin-top: 200px;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+footer .contact-us {
+    height: 300px;
+}
