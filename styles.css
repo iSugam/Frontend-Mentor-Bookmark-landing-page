@@ -855,6 +855,8 @@ footer .contact-us {
 
 footer .contact-us p {
     letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 16px;
 }
 
 footer .contact-us h3 {
@@ -868,6 +870,7 @@ footer .contact-us form {
     justify-content: space-between;
 }
 
+/****** Footer INPUT and BUTTON Styles ******/
 footer .contact-us form input,
 footer .contact-us form button {
     padding: 12px 20px;
@@ -888,12 +891,35 @@ footer .contact-us form button {
     color: #fff;
     cursor: pointer;
     font-weight: 600;
-    width: 200px;
+    width: 160px;
 }
 
 footer .contact-us form button:hover {
     background-color: #fff;
     border: 3px solid hsl(0, 94%, 66%);
     color: hsl(229, 31%, 21%);
+}
 
+/********** NAVBAR footer Styling **********/
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: hsl(229, 31%, 21%);
+    height: 80px;
+}
+
+footer nav ul li {
+    display: inline;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
 }
