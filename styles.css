@@ -839,6 +839,25 @@ footer {
     text-align: center;
 }
 
+/****** CONTACT US in footer section ******/
 footer .contact-us {
-    height: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color:  hsl(231, 69%, 60%);
+    padding: 50px 0;
+    color: #fff;
+}
+
+footer .contact-us p {
+    letter-spacing: 5px;
+}
+
+footer .contact-us h3 {
+    font-size: 35px;
+}
+
+footer .contact-us form {
+    display: inline-block;
 }
