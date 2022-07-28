@@ -327,7 +327,21 @@ body {
     }
  
      .hero .hero-image .hero-background {
-        width: 140%;
+        width: 110%;
+        height: 90%;
+    }
+}
+
+@media (max-width: 556px) {
+    .hero .hero-image .hero-background {
+        width: 475px;
+        height: 90%;
+    }
+}
+
+@media (max-width: 356px) {
+    .hero .hero-image .hero-background {
+        width: 150%;
         height: 90%;
     }
 }
