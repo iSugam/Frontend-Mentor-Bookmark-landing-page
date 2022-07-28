@@ -893,12 +893,12 @@ footer .contact-us .email-inp img {
     position: absolute;
     top: 50%;
     left: calc(100% - 22px);
-    transform: translate(0, -50%) scale(0);
+    transform: translate(calc(100% - 34px), -50%) scale(0);
     visibility: hidden;
     transition: 300ms;
 }
 footer .contact-us .email-inp img.active {
-    transform: translate(0, -50%) scale(1);
+    transform: translate(calc(100% - 34px), -50%) scale(1);
     visibility: visible;
 }
 
