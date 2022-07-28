@@ -883,6 +883,46 @@ footer .contact-us form {
 }
 
 /****** Footer INPUT and BUTTON Styles ******/
+
+footer .contact-us .email-inp {
+    position: relative;
+    width: 100%;
+}
+
+footer .contact-us .email-inp img {
+    position: absolute;
+    top: 50%;
+    left: calc(100% - 22px);
+    transform: translate(0, -50%) scale(0);
+    visibility: hidden;
+    transition: 300ms;
+}
+footer .contact-us .email-inp img.active {
+    transform: translate(0, -50%) scale(1);
+    visibility: visible;
+}
+
+footer .contact-us .email-inp h6 {
+    position: absolute;
+    font-weight: 400;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: hsl(0, 94%, 66%);
+    padding: 5px;
+    border-radius: 5px;
+    transform-origin: top;
+    transform: scaleY(0);
+    visibility: hidden;
+    transition: 300ms;
+}
+
+footer .contact-us .email-inp h6.active {
+    transform: scaleY(1);
+    visibility: visible;
+}
+
 footer .contact-us form input,
 footer .contact-us form button {
     padding: 12px 20px;
@@ -896,6 +936,10 @@ footer .contact-us form button {
 
 footer .contact-us form input::placeholder {
     color: hsl(229 8% 60% / 0.6);
+}
+
+footer .contact-us form input.active {
+    border: 3px solid hsl(0, 94%, 66%);
 }
 
 footer .contact-us form button {
