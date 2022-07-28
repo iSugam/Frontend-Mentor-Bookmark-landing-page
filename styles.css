@@ -838,6 +838,7 @@ footer {
     display: block;
     text-align: center;
     background-color:  hsl(231, 69%, 60%);
+    overflow: hidden;
 }
 
 /****** CONTACT US in footer section ******/
@@ -847,7 +848,6 @@ footer .contact-us {
     flex-direction: column;
     gap: 30px;
     margin: auto;
-    background-color:  hsl(231, 69%, 60%);
     padding: 50px 0;
     color: #fff;
     width: max-content;
@@ -928,9 +928,25 @@ footer nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 14px;
-    font-weight: 400;
+    font-weight: thin;
+    transition: color 200ms;
+}
+
+footer nav ul li a:hover {
+    color: hsl(0, 94%, 66%);
 }
 
 footer nav ul li a svg path {
     fill: #fff;
+}
+
+footer nav .social-icon a {
+    padding: 0 1rem;
+}
+
+footer nav .social-icon a svg path {
+    transition: fill 200ms;
+}
+footer nav .social-icon a:hover svg > path {
+    fill: hsl(0, 94%, 66%);
 }
