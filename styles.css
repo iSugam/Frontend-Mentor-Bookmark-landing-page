@@ -198,6 +198,10 @@ body {
         background-color: transparent;
         border-color: #fff9;
     }
+
+    #header nav ul li:last-child a:hover {
+        color: hsl(0, 94%, 66%);
+    }
 }
 
 /**************** CONTAINER Section Styles ****************/
@@ -758,6 +762,7 @@ body {
 .faq-question-answer .faq-question {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
     padding: 10px 0;
     cursor: pointer;
     font-size: 18px;
@@ -803,7 +808,7 @@ body {
     .faq-container {
         width: 100%;
         margin: auto;
-        padding: 2rem;
+        padding: 1.5rem;
     }  
     
     .faq-container .faq-heading {
