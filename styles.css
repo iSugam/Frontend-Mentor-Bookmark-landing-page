@@ -958,7 +958,7 @@ footer .contact-us form button:hover {
 }
 
 /********** NAVBAR footer Styling **********/
-footer nav {
+footer .footer-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -968,20 +968,20 @@ footer nav {
     padding: 0 10rem;
 }
 
-footer nav ul {
+footer .footer-nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-footer nav ul li {
+footer .footer-nav ul li {
     display: inline;
     padding: 0 2rem;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
 
-footer nav ul li a {
+footer .footer-nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 14px;
@@ -989,28 +989,28 @@ footer nav ul li a {
     transition: color 200ms;
 }
 
-footer nav ul li a:hover {
+footer .footer-nav ul li a:hover {
     color: hsl(0, 94%, 66%);
 }
 
-footer nav ul li a svg path {
+footer .footer-nav ul li a svg path {
     fill: #fff;
 }
 
-footer nav .social-icon a {
+footer .footer-nav .social-icon a {
     padding: 0 1rem;
 }
 
-footer nav .social-icon a svg path {
+footer .footer-nav .social-icon a svg path {
     transition: fill 200ms;
 }
-footer nav .social-icon a:hover svg > path {
+footer .footer-nav .social-icon a:hover svg > path {
     fill: hsl(0, 94%, 66%);
 }
 
 /**************** Media Query for FOOTER Section 980px ****************/
 @media (max-width: 980px) {
-    footer nav  {
+    footer .footer-nav  {
         padding: 2rem 5rem;
         flex-direction: column;
         gap: 30px;
@@ -1033,7 +1033,7 @@ footer nav .social-icon a:hover svg > path {
         width: 100%;
     }
 
-    footer nav ul {
+    footer .footer-nav ul {
         flex-direction: column;
         gap: 30px;
     }
@@ -1056,11 +1056,11 @@ footer nav .social-icon a:hover svg > path {
         width: fit-content;
     } 
     
-    footer nav ul li a {
+    footer .footer-nav ul li a {
         font-size: 12px;
     }
 
-    footer nav .social-icon a {
+    footer .footer-nav .social-icon a {
         display: inline-block;
         padding: 1rem;
     }
