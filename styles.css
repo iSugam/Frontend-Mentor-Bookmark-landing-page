@@ -837,6 +837,7 @@ footer {
     width: 100%;
     display: block;
     text-align: center;
+    background-color:  hsl(231, 69%, 60%);
 }
 
 /****** CONTACT US in footer section ******/
@@ -845,9 +846,11 @@ footer .contact-us {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin: auto;
     background-color:  hsl(231, 69%, 60%);
     padding: 50px 0;
     color: #fff;
+    width: max-content;
 }
 
 footer .contact-us p {
@@ -859,7 +862,10 @@ footer .contact-us h3 {
 }
 
 footer .contact-us form {
-    display: inline-block;
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    justify-content: space-between;
 }
 
 footer .contact-us form input,
@@ -867,11 +873,14 @@ footer .contact-us form button {
     padding: 12px 20px;
     border-radius: 5px;
     outline: none;
-    border: none;
-    margin: 0 5px;
     font-weight: 500;
-    outline: 2px solid transparent;
+    border: 3px solid transparent;
     transition: color 200ms, background-color 200ms, outline 200ms;
+    width: 100%;
+}
+
+footer .contact-us form input::placeholder {
+    color: hsl(229 8% 60% / 0.6);
 }
 
 footer .contact-us form button {
@@ -879,11 +888,12 @@ footer .contact-us form button {
     color: #fff;
     cursor: pointer;
     font-weight: 600;
+    width: 200px;
 }
 
 footer .contact-us form button:hover {
     background-color: #fff;
-    outline: 2px solid hsl(0, 94%, 66%);
+    border: 3px solid hsl(0, 94%, 66%);
     color: hsl(229, 31%, 21%);
 
 }
