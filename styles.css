@@ -1064,3 +1064,15 @@ footer nav .social-icon a:hover svg > path {
         padding: 1rem;
     }
 }
+
+.attribution {
+    font-size: 12px;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: hsl(229, 31%, 21%);
+}
+
+.attribution a {
+    color: hsl(0, 94%, 66%);
+}
