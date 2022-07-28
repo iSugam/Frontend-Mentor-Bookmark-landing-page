@@ -730,6 +730,7 @@ body {
     margin-top: 20px;
     margin-bottom: 30px;
     color: hsl(229, 8%, 60%);
+    line-height: 28px;
 }
 
 /****** FAQ QUESTION and ANSWER Styles ******/
@@ -795,4 +796,32 @@ body {
     visibility: visible;
     height: 100%;
     margin: 20px 0;
+}
+
+@media (max-width: 756px) {
+
+    .faq-container {
+        width: 100%;
+        margin: auto;
+        padding: 2rem;
+    }  
+    
+    .faq-container .faq-heading {
+        width: 100%;
+        margin: 0;
+    }
+
+    .faq-container .faq-heading h2 {
+        font-size: 28px;
+    }
+
+    .faq-container .faq-heading p {
+        font-size: 16px;
+    }
+
+    /****** FAQ QUESTION and ANSWER Styles ******/
+    .faq-question-answer .faq-question {
+        font-size: 16px;
+    }
+    
 }
