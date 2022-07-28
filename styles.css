@@ -861,6 +861,7 @@ footer .contact-us p {
 
 footer .contact-us h3 {
     font-size: 35px;
+    font-weight: 500;
 }
 
 footer .contact-us form {
@@ -956,7 +957,7 @@ footer nav .social-icon a:hover svg > path {
     footer nav  {
         padding: 2rem 5rem;
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
         height: max-content;
     }
 }
@@ -965,6 +966,7 @@ footer nav .social-icon a:hover svg > path {
 @media (max-width: 756px) {
     footer .contact-us h3 {
         font-size: 28px;
+        width: max-content;
     }
 
     footer .contact-us form {
@@ -974,5 +976,26 @@ footer nav .social-icon a:hover svg > path {
     footer .contact-us form button {
         width: 100%;
     }
+
+    footer nav ul {
+        flex-direction: column;
+        gap: 30px;
+    }
 }
 
+@media (max-width: 556px) {
+    footer .contact-us {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    footer .contact-us p {
+        font-size: 14px;
+    }
+
+    footer .contact-us h3 {
+        font-size: 24px;
+        margin: auto;
+        width: max-content;
+    }    
+}
