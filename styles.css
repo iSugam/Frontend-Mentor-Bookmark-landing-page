@@ -864,9 +864,26 @@ footer .contact-us form {
 
 footer .contact-us form input,
 footer .contact-us form button {
-    padding: 10px 20px;
+    padding: 12px 20px;
     border-radius: 5px;
     outline: none;
     border: none;
     margin: 0 5px;
+    font-weight: 500;
+    outline: 2px solid transparent;
+    transition: color 200ms, background-color 200ms, outline 200ms;
+}
+
+footer .contact-us form button {
+    background-color: hsl(0, 94%, 66%);
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+footer .contact-us form button:hover {
+    background-color: #fff;
+    outline: 2px solid hsl(0, 94%, 66%);
+    color: hsl(229, 31%, 21%);
+
 }
